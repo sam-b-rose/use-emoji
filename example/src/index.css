@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(2rem, 1fr) );
+}
+
+.button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  background: transparent;
+  font-size: 0.825rem;
+  font-weight: 700;
+}
