@@ -19,7 +19,7 @@ import { useEmoji, useSameEmoji } from 'use-emoji'
 
 const Example = () => {
   const newEmoji = useEmoji()   // returns a new random emoji on each rerender
-  const sameEmoji = useEmoji()  // returns a the same random emoji on each rerender
+  const sameEmoji = useSameEmoji()  // returns a the same random emoji on each rerender
   return (
     <div>{newEmoji}</div>
     <div>{sameEmoji}</div>
