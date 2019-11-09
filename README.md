@@ -1,6 +1,6 @@
 # use-emoji
 
-> React hook for emoji related things
+> React hook for emoji related things 🎣
 
 [![NPM](https://img.shields.io/npm/v/use-emoji.svg)](https://www.npmjs.com/package/use-emoji) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -18,10 +18,10 @@ import React, { Component } from 'react'
 import { useEmoji, useSameEmoji } from 'use-emoji'
 
 const Example = () => {
-  const newEmoji = useEmoji()   // returns a new random emoji on each rerender
-  const sameEmoji = useSameEmoji()  // returns a the same random emoji on each rerender
+  const randomEmoji = useEmoji()    // returns a random emoji on each rerender
+  const sameEmoji = useSameEmoji()  // returns the same emoji on each rerender
   return (
-    <div>{newEmoji}</div>
+    <div>{randomEmoji}</div>
     <div>{sameEmoji}</div>
   )
 }
