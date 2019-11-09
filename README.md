@@ -15,12 +15,14 @@ npm install --save use-emoji
 ```jsx
 import React, { Component } from 'react'
 
-import { useEmoji } from 'use-emoji'
+import { useEmoji, useSameEmoji } from 'use-emoji'
 
 const Example = () => {
-  const example = useEmoji()
+  const newEmoji = useEmoji()   // returns a new random emoji on each rerender
+  const sameEmoji = useEmoji()  // returns a the same random emoji on each rerender
   return (
-    <div>{example}</div>
+    <div>{newEmoji}</div>
+    <div>{sameEmoji}</div>
   )
 }
 ```
@@ -28,7 +30,3 @@ const Example = () => {
 ## License
 
 MIT © [samrose3](https://github.com/samrose3)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
